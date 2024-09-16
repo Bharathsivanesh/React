@@ -2,10 +2,12 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
 import './index.css'
-import Csspomponent from './csscomponent.jsx'
+import Form from './login'
+// import Csspomponent from './csscomponent.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Csspomponent/>
+    {/* <Csspomponent/> */}
+    <Form/>
   </StrictMode>,
 )
