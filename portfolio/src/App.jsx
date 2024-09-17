@@ -1,13 +1,19 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Profile from "./pages/profile";
+import Project from "./pages/projects";
+import About from "./pages/about";
 
-
-function App() {
+const App = () => {
   return (
     <>
-    <h1 className="text-3xl font-bold text-center underline">
-      Hello world!
-    </h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Profile />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
-}
-
-export default App
+  );
+};
+export default App;
