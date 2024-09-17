@@ -1,12 +1,16 @@
-
+/* eslint-disable react/prop-types */
 
 const Aarrayvalue = (props) => {
+  
+  const ans=props.data;
+
   return (
     <>
       <ul>
-        {props.ans.map((item,index)=>(
-            <li key={index}>{item}</li>
-        ))}
+      {ans.map((item,index)=>(
+        <li key={index}>{item.age}</li>
+      ))
+      }
       </ul>
     </>
   );
