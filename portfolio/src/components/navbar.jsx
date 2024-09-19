@@ -3,23 +3,67 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const [visible, setvisible] = useState(false);
+  const [menuopen, setmenuopen] = useState(false);
   return (
     <>
       <div className="flex w-full justify-between items-center bg-[#2F3A44] text-white h-14 px-4 shadow-lg">
         <div className="flex w-1/5 justify-center">
           <h2 className="font-serif font-bold text-3xl">Bharath</h2>
         </div>
-        <div className="flex w-[70%] items-center justify-end space-x-20  mx-10 font-serif font-bold">
-          <Link to="/">PROFILE</Link>
-          <Link to="/project">PROJECT</Link>
-          <Link to="/about">ABOUT</Link>
+        <div className="hidden md:flex w-[70%] items-center justify-end space-x-20  mx-10 font-serif font-bold">
+          <Link to="/" className="hover:text-cyan-300">
+            PROFILE
+          </Link>
+          <Link to="/project" className="hover:text-cyan-300">
+            PROJECT
+          </Link>
+          <Link to="/about" className="hover:text-cyan-300">
+            ABOUT
+          </Link>
           <CircleUser
             onClick={() => {
               setvisible(true);
             }}
+            className="hover:text-cyan-300"
           />
         </div>
+        <div className="md:hidden">
+          <button onClick={() => setmenuopen(!menuopen)}> &#9776; </button>
+        </div>
       </div>
+
+      {menuopen && (
+        <div className="md:hidden flex flex-col w-full bg-[#2F3A44] p-4 space-y-5 ">
+          <Link
+            to="/"
+            className="text-white font-bold hover:text-cyan-300 "
+            onClick={() => setmenuopen(false)}
+          >
+            PROFILE
+          </Link>
+          <Link
+            to="/project"
+            className="text-white font-bold hover:text-cyan-300"
+            onClick={() => setmenuopen(false)}
+          >
+            PROJECT
+          </Link>
+          <Link
+            to="/about"
+            className="text-white font-bold hover:text-cyan-300"
+            onClick={() => setmenuopen(false)}
+          >
+            ABOUT
+          </Link>
+          <CircleUser
+            className="text-white hover:text-cyan-300"
+            onClick={() => {
+              setvisible(true);
+              setmenuopen(false);
+            }}
+          />
+        </div>
+      )}
 
       {visible && (
         <div className=" h-screen w-screen absolute left-0 top-0 bg-black/20   flex justify-center items-center min-h-screen">
