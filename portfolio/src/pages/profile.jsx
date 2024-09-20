@@ -1,9 +1,9 @@
-import profileImage from "../assets/img/profile.jpg";
-
-const About = () => {
+import profileImage from "../assets/img/animated.png";
+import Aboutme from "./aboutme";
+const Profile = () => {
   return (
     <>
-      <div className=" flex flex-col justify-evenly md:flex-row justify-between items-center md:h-screen w-screen bg-[#374151] ">
+      <div className=" flex flex-col justify-evenly md:flex-row  items-center md:h-screen w-full  bg-[#374151] ">
         <div className="text-white flex flex-col items-start justify-start p-10  md:h-3/5 md:w-1/2  ">
           <h2 className="text-start text-4xl font-bold mb-4">
             <p>
@@ -81,12 +81,13 @@ const About = () => {
           <img
             src={profileImage}
             alt="Profile"
-            className="w-96 rounded-full  h-96 object-cover"
+            className=" w-72 h-72 md:w-96   md:h-96 "
           />
         </div>
       </div>
+      <Aboutme />
     </>
   );
 };
 
-export default About;
+export default Profile;
