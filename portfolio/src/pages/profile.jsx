@@ -4,7 +4,11 @@ const Profile = () => {
   return (
     <>
       <div className=" flex flex-col justify-evenly md:flex-row  items-center md:h-screen w-full  bg-[#374151] ">
-        <div className="text-white flex flex-col items-start justify-start p-10  md:h-3/5 md:w-1/2  ">
+        <div
+          className="text-white flex flex-col items-start justify-start p-10  md:h-3/5 md:w-1/2 "
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
           <h2 className="text-start text-4xl font-bold mb-4">
             <p>
               Hi, I<span className="text-cyan-300 text-5xl">’</span>m{" "}
@@ -77,7 +81,11 @@ const Profile = () => {
           </section>
         </div>
 
-        <div className=" md:flex items-center  flex-col justify-start  md:h-3/5 ">
+        <div
+          className=" md:flex items-center  flex-col justify-start  md:h-3/5"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           <img
             src={profileImage}
             alt="Profile"

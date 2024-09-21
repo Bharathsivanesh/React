@@ -4,18 +4,31 @@ const Aboutme = () => {
   return (
     <>
       <div className="flex flex-col justify-center w-[100%] items-start bg-[#374151]">
-        <h1 className="text-white w-[100%] font-serif font-bold text-5xl text-center">
-          <span className="text-cyan-300">About </span>Me !
+        <h1
+          className="text-white w-[100%] font-serif font-bold text-5xl text-center"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
+          <span className="text-cyan-300">About </span>
+          Me !
         </h1>
         <div className="  flex flex-col  justify-center items-center md:gap-0 gap-20 md:justify-evenly md:flex-row   mt-20 w-full">
-          <div className="flex items-center justify-center">
+          <div
+            className="flex items-center justify-center"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <img
               src={profile}
               alt=""
               className="rounded-full md:h-96 md:w-96 w-72 h-72"
             />
           </div>
-          <div className="w-[80%]  md:w-2/5 h-full md:h-3/5 flex justify-center items-center flex-col glow rounded-lg">
+          <div
+            className="w-[80%]  md:w-2/5 h-full md:h-3/5 flex justify-center items-center flex-col glow rounded-lg"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <h2 className="text-3xl font-serif font-bold p-10 text-cyan-300">
               Developer And Desighner
             </h2>
