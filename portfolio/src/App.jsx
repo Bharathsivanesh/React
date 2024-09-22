@@ -3,6 +3,7 @@ import Profile from "./pages/profile";
 import Project from "./pages/projects";
 import Weblayout from "./layouts/weblayout";
 import Aboutme from "./pages/aboutme";
+import Skills from "./pages/skills";
 const App = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const App = () => {
             <Route path="/" element={<Profile />} />
             <Route path="/project" element={<Project />} />
             <Route path="/about" element={<Aboutme />} />
+            <Route path="/skills" element={<Skills />} />
           </Route>
         </Routes>
       </BrowserRouter>

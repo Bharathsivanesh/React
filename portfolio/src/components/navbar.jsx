@@ -7,17 +7,22 @@ const Navbar = () => {
   return (
     <>
       <div className="flex w-full justify-between items-center bg-[#2F3A44] text-white h-14 px-4 shadow-lg">
-        <div className="flex w-1/5 justify-center">
-          <h2 className="font-serif font-bold text-3xl">Bharath</h2>
+        <div className="flex w-1/5 justify-center bg-[#2F3A44]">
+          <h2 className="font-serif font-bold text-3xl  bg-[#2F3A44]">
+            Bharath
+          </h2>
         </div>
-        <div className="hidden md:flex w-[70%] items-center justify-end space-x-20  mx-10 font-serif font-bold">
-          <Link to="/" className="hover:text-cyan-300">
+        <div className="hidden md:flex w-[70%] items-center justify-end space-x-20  mx-10 font-serif font-bold bg-[#2F3A44]">
+          <Link to="/" className="hover:text-cyan-300 bg-[#2F3A44]">
             PROFILE
           </Link>
-          <Link to="/project" className="hover:text-cyan-300">
+          <Link to="/project" className="hover:text-cyan-300 bg-[#2F3A44]">
             PROJECT
           </Link>
-          <Link to="/about" className="hover:text-cyan-300">
+          <Link to="/skills" className="hover:text-cyan-300 bg-[#2F3A44]">
+            SKILLS
+          </Link>
+          <Link to="/about" className="hover:text-cyan-300 bg-[#2F3A44]">
             ABOUT
           </Link>
           <CircleUser
@@ -36,21 +41,21 @@ const Navbar = () => {
         <div className="md:hidden flex flex-col w-full bg-[#2F3A44] p-4 space-y-5 ">
           <Link
             to="/"
-            className="text-white font-bold hover:text-cyan-300 "
+            className="text-white font-bold hover:text-cyan-300 bg-[#2F3A44]"
             onClick={() => setmenuopen(false)}
           >
             PROFILE
           </Link>
           <Link
             to="/project"
-            className="text-white font-bold hover:text-cyan-300"
+            className="text-white font-bold hover:text-cyan-300 bg-[#2F3A44]"
             onClick={() => setmenuopen(false)}
           >
             PROJECT
           </Link>
           <Link
             to="/about"
-            className="text-white font-bold hover:text-cyan-300"
+            className="text-white font-bold hover:text-cyan-300 bg-[#2F3A44]"
             onClick={() => setmenuopen(false)}
           >
             ABOUT
