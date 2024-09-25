@@ -1,5 +1,6 @@
 import { CircleUser, CircleX } from "lucide-react";
 import { useState } from "react";
+
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const [visible, setvisible] = useState(false);
@@ -25,12 +26,15 @@ const Navbar = () => {
           <Link to="/about" className="hover:text-cyan-300 bg-[#2F3A44]">
             ABOUT
           </Link>
-          <CircleUser
+          <Link to="/contact  " className="hover:text-cyan-300 bg-[#2F3A44]">
+            CONTACT
+          </Link>
+          {/* <CircleUser
             onClick={() => {
               setvisible(true);
             }}
             className="hover:text-cyan-300"
-          />
+          /> */}
         </div>
         <div className="md:hidden">
           <button onClick={() => setmenuopen(!menuopen)}> &#9776; </button>

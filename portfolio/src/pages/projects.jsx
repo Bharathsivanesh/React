@@ -1,7 +1,7 @@
 import project1 from "../assets/img/project1.png";
 import project2 from "../assets/img/project2.png";
 import project3 from "../assets/img/project3.png";
-import Skills from "./skills";
+import Skills from "./skills";  
 const projects = () => {
   const project = [
     {

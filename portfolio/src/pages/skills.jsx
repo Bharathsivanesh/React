@@ -1,3 +1,6 @@
+// import { Contact } from "lucide-react";
+import Contact_page from "./contact";
+
 const Skills = () => {
   const siva = [
     {
@@ -77,24 +80,25 @@ const Skills = () => {
               <h2 className="text-white  font-bold">Professional</h2>
             </div>
 
-            <div className="grid grid-cols-2 gap-10  mt-10 mr-0 md:mr-20">
+            <div className="grid grid-cols-2 gap-10 mt-10 mr-0 md:mr-20">
               {professional.map((skill, index) => (
                 <div
                   key={index}
-                  className="relative flex flex-col items-center justify-center  ml-0 md:ml-24"
+                  className="flex flex-col items-center justify-center ml-0 md:ml-24"
                 >
-                  <div className="relative w-32 h-32 rounded-full bg-gray-100 shadow-inner flex items-center justify-center">
+                  <div className="w-32 h-32 rounded-full bg-gray-100 shadow-inner flex items-center justify-center">
                     <div
-                      className="absolute top-0 left-0 w-full h-full rounded-full"
+                      className="w-full h-full rounded-full flex items-center justify-center"
                       style={{
                         background: `conic-gradient(#06b6d4 ${
                           skill.percentage * 3.6
                         }deg, #e5e7eb 0deg)`,
                       }}
-                    ></div>
-                    <h2 className="absolute text-2xl  rounded-full h-20 w-20 flex justify-center items-center t font-bold text-white">
-                      {skill.percentage}%
-                    </h2>
+                    >
+                      <span className="text-2xl font-bold text-white rounded-full h-20 flex items-center w-20 justify-center">
+                        {skill.percentage}%
+                      </span>
+                    </div>
                   </div>
 
                   <h3 className="mt-4 text-white text-lg font-semibold">
@@ -104,6 +108,7 @@ const Skills = () => {
               ))}
             </div>
           </div>
+          <Contact_page />
         </div>
       </h1>
     </>

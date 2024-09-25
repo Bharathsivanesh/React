@@ -4,6 +4,7 @@ import Project from "./pages/projects";
 import Weblayout from "./layouts/weblayout";
 import Aboutme from "./pages/aboutme";
 import Skills from "./pages/skills";
+import Contact_page from "./pages/contact";
 const App = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const App = () => {
             <Route path="/project" element={<Project />} />
             <Route path="/about" element={<Aboutme />} />
             <Route path="/skills" element={<Skills />} />
+            <Route path="/contact" element={<Contact_page/>} />
           </Route>
         </Routes>
       </BrowserRouter>
