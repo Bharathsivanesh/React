@@ -1,9 +1,9 @@
-import { CircleUser, CircleX } from "lucide-react";
+// import { CircleUser, CircleX } from "lucide-react";
 import { useState } from "react";
 
 import { Link } from "react-router-dom";
 const Navbar = () => {
-  const [visible, setvisible] = useState(false);
+  // const [visible, setvisible] = useState(false);
   const [menuopen, setmenuopen] = useState(false);
   return (
     <>
@@ -64,17 +64,17 @@ const Navbar = () => {
           >
             ABOUT
           </Link>
-          <CircleUser
+          {/* <CircleUser
             className="text-white hover:text-cyan-300"
             onClick={() => {
               setvisible(true);
               setmenuopen(false);
             }}
-          />
+          /> */}
         </div>
       )}
 
-      {visible && (
+      {/* {visible && (
         <div className=" h-screen w-screen absolute left-0 top-0 bg-black/20   flex justify-center items-center min-h-screen">
           <form className="w-2/5 h-96 p-10 flex flex-col justify-center items-center bg-violet-500 rounded-lg shadow-lg space-y-4">
             <div className="flex justify-end   w-full ">
@@ -112,7 +112,7 @@ const Navbar = () => {
             </button>
           </form>
         </div>
-      )}
+      )} */}
     </>
   );
 };
