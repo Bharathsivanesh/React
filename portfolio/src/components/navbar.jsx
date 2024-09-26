@@ -9,7 +9,7 @@ const Navbar = () => {
     <>
       <div className="flex w-full justify-between items-center bg-[#2F3A44] text-white h-14 px-4 shadow-lg">
         <div className="flex w-1/5 justify-center bg-[#2F3A44]">
-          <h2 className="font-serif font-bold text-3xl  md:pl-0 pl-14  bg-[#2F3A44]">
+          <h2 className="font-serif font-bold text-3xl  md:ml-0  ml-28 bg-[#2F3A44]">
             Bharath
           </h2>
         </div>
