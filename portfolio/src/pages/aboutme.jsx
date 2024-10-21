@@ -25,7 +25,7 @@ const Aboutme = () => {
             />
           </div>
           <div
-            className="w-[80%]  md:w-2/5 h-full md:h-3/5 flex justify-center items-center flex-col glow rounded-lg"
+            className="w-[80%]  md:w-1/2 h-full md:h-3/5 flex justify-center items-center flex-col glow rounded-lg"
             data-aos="fade-left"
             data-aos-duration="2000"
           >
@@ -33,10 +33,14 @@ const Aboutme = () => {
               Developer And Desighner
             </h2>
             <p className=" text-2xl text-white font-serif p-5">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
-              cumque suscipit quidem a asperiores odio. Tempora iste qui fugit
-              est quisquam autem quaerat beatae quas deleniti. Ab dolor a
-              veritatis!
+              I am a dedicated Web and App Developer with experience in
+              developing, designing, and deploying both web and mobile projects.
+              I have strong leadership skills and enjoy solving problems. When
+              faced with challenges, I put in full effort to find the solution.
+              If I don't know something, I research thoroughly and ask for help
+              if needed, but I always make sure to find the solution. I quickly
+              learn new technologies and adapt to different tools, which helps
+              me complete projects efficiently and on time.
             </p>
             <button className=" bg-cyan-300 py-2 px-4 mb-5 font-serif font-bold text-white mt-5 rounded-lg hover:bg-cyan-400 transform hover:scale-105 transition-transform duration-100">
               Resume
